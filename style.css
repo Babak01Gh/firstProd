@@ -16,6 +16,7 @@
     --primaryYellow: #F7CA44;
     --primaryNavy:#30475E;
     --secondaryNavy:#7E8A97;
+    --secondaryBack:#e9e9e9;
 }
 html{
     font-size: 62.5%;
@@ -92,7 +93,7 @@ ul.navList li:first-child{
 }
 section.banner{
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
 .banner img{
@@ -138,22 +139,79 @@ section.banner{
     color: var(--primaryYellow);
     cursor: pointer;
 }
+/* ----------SEE ALSO---------- */
+.seeAlso{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondaryBack);
+    position: relative;
+}
+.btnNext , .btnPrev{
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--primaryNavy);
+}
+.swiperSeeAlso{
+    width: 80%;
+    overflow: hidden;
+    transform: translateY(-80px);
+    direction: ltr;
+}
+.seeAlso--part , .swiper-slide{
+    background: #fdfdfd;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #212427;
+}
+.part--img{
+    width: 100%;
+    height: 120px;
+    border-radius: 1rem;
+}
+.part--details span{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+.part--details p{
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    color: #646464;
+}
+.part--details a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    font-weight: 900;
+    display: inline-block;
+    margin: 1rem 0 0;
+    padding: 1rem 1.8rem;
+    background-color: var(--primaryYellow);
+    border-radius: 2rem;
+}
+.fixed-position{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
 @media screen and (max-width:768px){
+    /* ----------Header---------- */
     .hamMenu{
         display: flex;
     }
     ul.navList{
         display: none;
         padding: 2rem 0;
+        order: 5;
+        width: 100%;
     }
     .navList li{
         box-shadow: 0 0 20px var(--secondaryNavy);
         padding: 1rem 0;
         border-radius: 2rem;
-    }
-    .navList{
-        order: 5;
-        width: 100%;
     }
     ul.navList.activeNav{
         flex-direction: column;

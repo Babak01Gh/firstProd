@@ -1,6 +1,10 @@
-const hamMenu = document.querySelector('.hamMenu');
-const navList = document.querySelector('.navList');
-hamMenu.addEventListener('click',()=>{
-    hamMenu.classList.toggle('activeMenu')
-    navList.classList.toggle('activeNav')
-})
+import { header , addEventHeader} from './pages/header.js';
+import seeAlso from './pages/seeAlso.js';
+import swiperAdder from './pages/swiper.js';
+const mainBox = document.querySelector('main');
+mainBox.innerHTML += header;
+mainBox.innerHTML += seeAlso;
+addEventHeader()
+swiperAdder()
+
+  
