@@ -83,13 +83,13 @@ ul.navList li:first-child{
     transition: all linear 0.5s;
 }
 .hamMenu.activeMenu .line:nth-child(1){
-    transform: rotateZ(-45deg) scaleX(0.7) translateX(-14px) translateY(-5px);
+    transform: rotateZ(45deg) scaleX(0.7) translateX(14px) translateY(-5px);
 }
 .hamMenu.activeMenu .line:nth-child(2){
     opacity: 0.5;
 }
 .hamMenu.activeMenu .line:nth-child(3){
-    transform: rotateZ(45deg) scaleX(0.7) translateX(-14px) translateY(5px);
+    transform: rotateZ(-45deg) scaleX(0.7) translateX(14px) translateY(5px);
 }
 section.banner{
     width: 100%;
@@ -147,6 +147,7 @@ section.banner{
     align-items: center;
     background-color: var(--secondaryBack);
     position: relative;
+    margin-bottom: 10rem;
 }
 .btnNext , .btnPrev{
     cursor: pointer;
@@ -197,6 +198,113 @@ section.banner{
     left: 0;
     right: 0;
 }
+/* ----------Works---------- */
+.allWorks{
+    width: 100%;
+}
+.work{
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.work--head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.work--head img{
+    width: 250px;
+    height: 250px;
+    border-radius: 2rem;
+}
+.work--head--intro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    justify-content: center;
+}
+.work--head--intro strong{
+    font-size: 3rem;
+    color: var(--primaryNavy);
+    margin-bottom: 2rem;
+}
+.work--head--intro strong::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: var(--primaryYellow);
+}
+.work--head--intro p{
+    font-size: 1.7rem;
+    color: var(--grayFont);
+}
+.work--more{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    transform: translateY(-50px);
+}
+.moreText{
+    width: 170px;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--primaryYellow);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all linear 0.3s;
+}
+.moreText:hover{
+    background-color: var(--primaryNavy);
+}
+.moreBody{
+    display: flex;    
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 2rem 0;
+    background-color: #f9f9f9;
+    width: 80%;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    transform: scale(0);
+    height: 0;
+    transition: height,transform linear 0.5s;
+}
+.moreBody.active{
+    height: auto;
+    transform: scale(1);
+}
+.moreBody video{
+    border-radius: 2rem;
+    max-width: 100%;
+    height: 400px;
+}
+.moreBody p{
+    font-size: 1.5rem;
+    color: var(--primaryNavy);
+    line-height: 2.5rem;
+}
+.video-header , .full-intro{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--grayFont);
+}
+.work-rahvar .moreBody p span{
+    color: var(--secondaryNavy);
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 3rem 0 1rem;
+}
 @media screen and (max-width:768px){
     /* ----------Header---------- */
     .hamMenu{
@@ -226,11 +334,30 @@ section.banner{
         font-size: 1.6rem;
         max-width: 90%;
     }
+    /* ----------Works---------- */
+    .moreBody p {
+        font-size: 1.3rem;
+    }
+    .work--head--intro p {
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width:400px){
     .banner--titles p{
        max-width: 100%;
        font-size: 1.3rem;
+    }
+    .work{
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width:590px){
+    .work--head{
+        flex-direction: column;
+        align-items: center;
+    }
+    .moreBody video{
+        height: auto;
     }
 }
 @media screen and (max-width:1024px){
