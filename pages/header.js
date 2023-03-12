@@ -34,8 +34,6 @@ const addEventHeader = () =>{
     hamMenu.addEventListener('click',()=>{
         hamMenu.classList.toggle('activeMenu')
         navList.classList.toggle('activeNav')
-        main.classList.toggle('fixed-position')
-        console.log('hi')
     })
 }
 export {header,addEventHeader}
