@@ -1,4 +1,5 @@
 const works = `
+<span class="ourWorks">خدمات ما</span>
 <div class="allWorks">
         <div class="work work-postex">
             <div class="work--head">
@@ -75,7 +76,33 @@ const works = `
 
                     </p>
                     <span class="video-header">ویدیو مربوطه : </span>
-                    <video src="assets/videos/rahver.mp4" controls></video>           
+                    <video src="assets/videos/rahvar.mp4" controls></video>
+                    <video src="assets/videos/rahvar2.mp4" controls></video>  
+                    <video src="assets/videos/rahvar3.mp4" controls></video>           
+                </div>
+                <span class="moreText">
+                    ادامه توضیحات ...
+                </span>
+            </div>
+        </div>
+        <div class="work work-iranish">
+            <div class="work--head">
+                <img src="assets/images/iranishBanner.png" alt="iranish">
+                <div class="work--head--intro">
+                    <strong>
+                        ایرانیش
+                    </strong>
+                    <p>دنبال مغازه میگردی؟ پول کافی برای خرید مغازه نداری؟ ایرانیش بخر<br/>
+                    پاساژ مجازی ایرانیش اولین و تنها ترین مجموعه خدماتی و تجاری در سطح ایران می باشد که علاوه بر معرفی یک مرکز جامع و کامل برای خرید هرگونه نیاز مشتری , راه را برای کسانی که میخواهند صاحب کسب و کار مجازی قانونی شوند و مالکیت آن را داشته باشند فراهم کرده است.</p>
+                </div>
+            </div>
+            <div class="work--more">
+                <div class="moreBody">
+                    <span class="full-intro">توضیحات کامل : </span>
+                    <p>
+                    به زودی
+                    </p>
+                    <span class="video-header">ویدیو مربوطه : </span>          
                 </div>
                 <span class="moreText">
                     ادامه توضیحات ...

@@ -1,12 +1,14 @@
 const header = `
 <header class="main-head">
     <div class="headNav">
+        <div class="logoContainer">
         <img src="assets/images/mainLogo.PNG" alt="logo" class="logo">
+        <h1 class="nameCom">سیگرویام</h1>
+        </div>
         <ul class="navList" dir="rtl">
            <li><a href="#">صفحه اصلی</a></li>
            <li><a href="#">خدمات ما</a></li>
            <li><a href="#">درباره ما</a></li>
-           <li><a href="#">اخبار و مقالات</a></li>
            <li><a href="#">تماس با ما</a></li>
         </ul>
         <div class="hamMenu">
@@ -34,6 +36,8 @@ const addEventHeader = () =>{
     hamMenu.addEventListener('click',()=>{
         hamMenu.classList.toggle('activeMenu')
         navList.classList.toggle('activeNav')
+        main.classList.toggle('fixed-position')
+        console.log('hi')
     })
 }
 export {header,addEventHeader}

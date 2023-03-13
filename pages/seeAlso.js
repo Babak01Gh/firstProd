@@ -16,7 +16,7 @@ const seeAlso = `
                 <div class="part--details">
                     <span class="de-head">پستکس</span>
                     <p class="de-descrip"> ارائه دهنده انواع خدمات پست آنلاین و جمع آوری به صورت درب تا درب</p>
-                    <a href="#" class="seeAlsoBtn">بیشتر بدانید</a>
+                    <a href="https://postex.ir" target="_blank" class="seeAlsoBtn">وب سایت رسمی</a>
                 </div>
             </div>
             <div class="seeAlso--part swiper-slide">
@@ -24,7 +24,7 @@ const seeAlso = `
                 <div class="part--details">
                     <span class="de-head"> هلدینگ بزرگ ره وار</span>
                     <p class="de-descrip"> سامانه هوشمند مسافربری بین شهری ره وار جهت سفری ایمن و مقرون بصرفه</p>
-                    <a href="#" class="seeAlsoBtn">بیشتر بدانید</a>
+                    <a href="https://rahvar.co" target="_blank" class="seeAlsoBtn">وب سایت رسمی</a>
                 </div>
             </div>
             <div class="seeAlso--part swiper-slide">
@@ -32,7 +32,7 @@ const seeAlso = `
                 <div class="part--details">
                     <span class="de-head">پاساژ مجازی ایرانیش</span>
                     <p class="de-descrip">پاساژ مجازی ایرانیش اولین و تنهاترین مجموعه خدماتی و تجاری در سطح ایران</p>
-                    <a href="#" class="seeAlsoBtn">بیشتر بدانید</a>
+                    <a href="https://iran-ish.ir" target="_blank" class="seeAlsoBtn">وب سایت رسمی</a>
                 </div>
             </div>
             <div class="seeAlso--part swiper-slide">
@@ -40,7 +40,7 @@ const seeAlso = `
                 <div class="part--details">
                     <span class="de-head">مویرگ | بیمه</span>
                     <p class="de-descrip">کارگزاری رسمی بیمه مستقیم برخط. کسب درآمد پایدار , قانونی و بدون سقف</p>
-                    <a href="#" class="seeAlsoBtn">بیشتر بدانید</a>
+                    <a href="https://mooyrag.com" target="_blank" class="seeAlsoBtn">وب سایت رسمی</a>
                 </div>
             </div>
         </div>
